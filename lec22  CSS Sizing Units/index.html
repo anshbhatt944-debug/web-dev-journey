@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container > div{
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a Box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor similique mollitia maiores autem non ipsam eveniet sint nobis, neque veniam asperiores blanditiis iusto enim maxime at nisi, tenetur obcaecati hic voluptatibus, facilis laborum? Voluptatem quam nemo repellendus labore dolorem nisi illo aut. Magni, placeat? Eum iste quidem itaque nisi culpa. Soluta sint nemo ab 
+            voluptates.
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis voluptate labore in! Ut nisi quasi maiores nihil odio facilis ab unde et.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>
