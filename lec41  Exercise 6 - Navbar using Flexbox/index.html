@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Navbar using Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            /* border: 2px solid black; */
+        }
+
+        .logo {
+            display: flex;
+            gap: 10px;
+            margin-left: 350px;
+        }
+
+        .logo p {
+            font-size: 14px;
+            color: gray;
+            margin-top: -5px
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            padding: 20px 80px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        li {
+            color: black;
+            font-size: 34px;
+        }
+
+        .main {
+            margin-top: 100px;
+        }
+
+        .h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .h2 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .option {
+            text-align: center;
+            word-wrap: break-word;
+            font-size: 30px;
+            width: 350px;
+            height: 80px;
+            background-color: rgb(8, 199, 199);
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img width="90px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdxEaOegDifts86VkLN-gvw787q2-QcG5jB8j4jHEvHANMowQEortpf8&s=10"
+                    alt="">
+                <div class="text">
+                    <h1 class="heading">Ultra Edit</h1>
+                    <p>An Idea, Inc. Company</p>
+                </div>
+            </div>
+            <ul>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="head">
+            <h1 class="h1">Download UltraEdit for Windows</h1>
+            <h2 class="h2">Download and try UltraEdit before you buy it! This download includes the full Windows version
+                of the text editor</h2>
+        </div>
+    </div>
+    <div class="button">
+        <div class="option">DOWNLOAD MAC OR LINUX VERSION</div>
+    </div>
+</body>
+
+</html>
