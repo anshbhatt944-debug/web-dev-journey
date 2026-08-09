@@ -5,139 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 6 - Navbar using Flexbox</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            background-color: white;
-            /* border: 2px solid black; */
-        }
-
-        .logo {
-            display: flex;
-            gap: 10px;
-            margin-left: 350px;
-        }
-
-        .logo p {
-            font-size: 14px;
-            color: gray;
-            margin-top: -5px
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            padding: 20px 80px;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 40px;
-            list-style: none;
-        }
-
-        li {
-            color: black;
-            font-size: 34px;
-        }
-
-        .main {
-            margin-top: 100px;
-        }
-
-        .h1 {
-            font-size: 60px;
-            text-align: center;
-        }
-
-        .h2 {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .button {
-            display: flex;
-            justify-content: center;
-        }
-
-        .button a {
-            display: inline-block;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .option {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            word-wrap: break-word;
-            font-size: 15px;
-            width: 350px;
-            height: 50px;
-            background-color: rgb(8, 199, 199);
-            color: white;
-            border: 2px solid;
-            border-radius: 10px;
-        }
-
-        .container {
-            width: fit-content;
-            margin: 80px auto;
-            display: grid;
-            grid-template-columns: repeat(3, 400px);
-            gap: 25px;
-        }
-
-        .item {
-            display: flex;
-            font-size: 30px;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            width: 400px;
-            border-radius: 6px;
-            background-color: rgb(243, 241, 241);
-            height: 200px;
-            word-wrap: break-word;
-            word-break: break-all;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 10px;
-        }
-
-        .blue {
-            background: #00b6d1;
-        }
-
-        .green {
-            background: #5cb85c;
-        }
-
-        .buttons a {
-            color: white;
-            padding: 18px 30px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .logo2 {
-            display: flex;
-            gap: 10px;
-            margin-top: 50px;
-            margin-bottom: -50px;
-            margin-left: 350px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -185,8 +53,16 @@
     <div class="container">
         <div class="item">
             <h3>English</h3>
+            <div class="buttons">
+                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
+                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
+            </div>
 
-            <p>English</p>
+        </div>
+        <div class="item">
+            <h3>Deutsch</h3>
+
+            <p>German</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
@@ -195,20 +71,9 @@
 
         </div>
         <div class="item">
-            <h3>English</h3>
+            <h3>Italiano</h3>
 
-            <p>English</p>
-
-            <div class="buttons">
-                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
-                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
-            </div>
-
-        </div>
-        <div class="item">
-            <h3>English</h3>
-
-            <p>English</p>
+            <p>Italian</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
@@ -217,20 +82,9 @@
 
         </div>
         <div class="item">
-            <h3>English</h3>
+            <h3>Español</h3>
 
-            <p>English</p>
-
-            <div class="buttons">
-                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
-                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
-            </div>
-
-        </div>
-        <div class="item">
-            <h3>English</h3>
-
-            <p>English</p>
+            <p>Spanish</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
@@ -239,20 +93,9 @@
 
         </div>
         <div class="item">
-            <h3>English</h3>
+            <h3>Francais</h3>
 
-            <p>English</p>
-
-            <div class="buttons">
-                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
-                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
-            </div>
-
-        </div>
-        <div class="item">
-            <h3>English</h3>
-
-            <p>English</p>
+            <p>French</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
@@ -261,20 +104,9 @@
 
         </div>
         <div class="item">
-            <h3>English</h3>
+            <h3>Português brasileiro</h3>
 
-            <p>English</p>
-
-            <div class="buttons">
-                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
-                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
-            </div>
-
-        </div>
-        <div class="item">
-            <h3>English</h3>
-
-            <p>English</p>
+            <p>Brazilian Portuguese</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
@@ -283,9 +115,42 @@
 
         </div>
         <div class="item">
-            <h3>English</h3>
+            <h3>日本</h3>
 
-            <p>English</p>
+            <p>Japanese</p>
+
+            <div class="buttons">
+                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
+                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
+            </div>
+
+        </div>
+        <div class="item">
+            <h3>한국인</h3>
+
+            <p>Korean</p>
+
+            <div class="buttons">
+                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
+                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
+            </div>
+
+        </div>
+        <div class="item">
+            <h3>中国</h3>
+
+            <p>Chinese</p>
+
+            <div class="buttons">
+                <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
+                <a class="green" href="ue_allinone.exe">Download 64-bit</a>
+            </div>
+
+        </div>
+        <div class="item">
+            <h3>繁体中文</h3>
+
+            <p>Traditional Chinese</p>
 
             <div class="buttons">
                 <a class="blue" href="ue_allinone.exe">Download 32-bit</a>
